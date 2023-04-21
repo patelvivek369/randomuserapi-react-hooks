@@ -1,0 +1,62 @@
+@import "../styles/variable.scss";
+.user {
+    display: flex;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-right: 50px;
+    &:hover, &.selected {
+        border-color: $primary-color;
+        cursor: pointer;
+    }
+    .image {
+        border-radius: 5px;
+        border: 1px solid $border-color;
+        background: #fff;
+        display: inline-flex;    
+        padding: 1.6rem;
+        margin: 0 0;
+        height: min-content;
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+    }
+    .desc {
+        margin-left: 1.2rem;
+        text-align: left;
+        margin-top: 0rem;
+        flex: 1;
+        .name {
+            margin-bottom: .2rem;
+            font-weight: 500;
+            font-size: 1.7rem;
+        }
+        .title {
+            margin-top: .4rem;
+            font-size: 1.5rem;
+            color: $secondary-color;
+        }
+    }
+    &.fd-col {
+        flex-direction: column;
+        border: none;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 0;
+        cursor: default;
+        .image {
+            margin: 0 auto;
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 2.8rem;
+            padding: 1.8rem;
+        }
+        .desc {
+            margin-left: 0;
+            margin-top: 1.6rem;
+            text-align: center;
+        }
+    }
+}
